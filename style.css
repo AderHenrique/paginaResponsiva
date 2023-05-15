@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: black;
+  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+header nav a:hover {
+  border-bottom: #fff solid 1px;
+}
+.sobreLoja {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.sobreLoja img,
+.text {
+  max-width: 45%;
+}
+h2 {
+  color: #00a8ff;
+  border-bottom: 3px #00a8ff solid;
+  margin-bottom: 20px;
+}
+.title {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.produtos {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 3%;
+}
+.carro {
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.carro button {
+  background-color: #00a8ff;
+  color: #fff;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.carro button:hover {
+  background-color: #fff;
+  color: black;
+}
+.carro img {
+  max-width: 100%;
+  max-height: 275px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  padding-top: 10px;
+}
+footer img {
+  max-width: 30px;
+  margin-left: 20px;
+}
+footer a {
+  text-decoration: none;
+}
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobreLoja {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sobreLoja img,
+  .text {
+    max-width: 90%;
+  }
+  .title {
+    max-width: 90%;
+  }
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+  }
+  .carro {
+    max-width: 100%;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .sobreLoja {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sobreLoja img,
+  .text {
+    max-width: 90%;
+  }
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    gap: 10%;
+  }
+  .carro {
+    max-width: 45%;
+    align-items: center;
+  }
+}
